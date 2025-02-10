@@ -1,29 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/masilva/Projects/curso_mvc/CursoMVC/CursoMVC.csproj": {}
+    "/home/masilva/Projetos/curso_mvc/CursoMVC/CursoMVC.csproj": {}
   },
   "projects": {
-    "/home/masilva/Projects/curso_mvc/CursoMVC/CursoMVC.csproj": {
+    "/home/masilva/Projetos/curso_mvc/CursoMVC/CursoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/masilva/Projects/curso_mvc/CursoMVC/CursoMVC.csproj",
+        "projectUniqueName": "/home/masilva/Projetos/curso_mvc/CursoMVC/CursoMVC.csproj",
         "projectName": "CursoMVC",
-        "projectPath": "/home/masilva/Projects/curso_mvc/CursoMVC/CursoMVC.csproj",
+        "projectPath": "/home/masilva/Projetos/curso_mvc/CursoMVC/CursoMVC.csproj",
         "packagesPath": "/home/masilva/.nuget/packages/",
-        "outputPath": "/home/masilva/Projects/curso_mvc/CursoMVC/obj/",
+        "outputPath": "/home/masilva/Projetos/curso_mvc/CursoMVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/masilva/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -31,28 +32,34 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[8.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[8.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[8.0.12, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -61,7 +68,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
