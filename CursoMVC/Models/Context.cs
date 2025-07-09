@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace CursoMVC.Models
 {
-    public class Context :DbContext
-
+    public class Context : DbContext
     {
-        public DbSet<Categoria> Categorias { get; set; }
+        public Context(DbContextOptions<Context> options) : base(options) { }
 
+        public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Cursomvc;Integrated Security=True");
-        }
+        // A configuração do banco de dados agora é feita via Startup.cs
     }
 }
